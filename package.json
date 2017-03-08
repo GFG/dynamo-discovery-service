@@ -1,5 +1,5 @@
 {
-  "name": "dds",
+  "name": "gfg-nodejs-libary-service-discovery",
   "version": "0.1.0",
   "description": "Discovery service like etcd but implemented with DynamoDB",
   "main": "index.js",
@@ -8,21 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SamVerschueren/dynamo-discovery-service.git"
+    "url": "https://github.com/GFG/gfg-nodejs-libary-service-discovery.git"
   },
   "keywords": [
     "etcd",
     "discovery"
   ],
   "author": {
-    "name": "Sam Verschueren",
-    "email": "sam.verschueren@gmail.com"
+    "name": "GFG",
+    "email": "nedved.yang@global-fashion-group"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SamVerschueren/dynamo-discovery-service/issues"
+    "url": "https://github.com/GFG/gfg-nodejs-libary-service-discovery/issues"
   },
-  "homepage": "https://github.com/SamVerschueren/dynamo-discovery-service",
+  "homepage": "https://github.com/GFG/gfg-nodejs-libary-service-discovery",
   "dependencies": {
     "aws-sdk": "^2.1.36",
     "dynamodb-doc": "^1.0.0",

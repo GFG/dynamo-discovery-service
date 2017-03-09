@@ -1,6 +1,6 @@
 {
   "name": "gfg-nodejs-libary-service-discovery",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Discovery service like etcd but implemented with DynamoDB",
   "main": "index.js",
   "scripts": {

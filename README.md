@@ -14,6 +14,8 @@ $ npm install --save gfg-nodejs-libary-service-discovery
 The idea is to use `DynamoDB` to keep track of the services. The downside is the extra code you have to write for 
 each service. This repo will try to tackle that.
 
+Forked from: https://github.com/SamVerschueren/dynamo-discovery-service
+
 The table hosted on Dynamo DB is: services
 Primary key: AppName
 Sort key: ServiceName

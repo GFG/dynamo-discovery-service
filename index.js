@@ -1,4 +1,4 @@
 'use strict';
 
-// Export DDS
-module.exports = require('./lib/dds');
+// Export Servicediscovery
+module.exports = require('./lib/servicediscovery');

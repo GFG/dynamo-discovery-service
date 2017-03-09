@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/GFG/gfg-nodejs-libary-service-discovery",
   "dependencies": {
-    "aws-sdk": "^2.1.36",
+    "aws-sdk": "^2.25.0",
     "dynamodb-doc": "^1.0.0",
     "q": "^1.4.1"
   }

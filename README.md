@@ -19,19 +19,6 @@ Forked from: https://github.com/SamVerschueren/dynamo-discovery-service
 The table hosted on Dynamo DB is: services
 Primary key: AppName
 Sort key: ServiceName
-Value: EndPoint
-
-Eg.
-pricing-engine
-serviceA
-{
-    "PROD": {
-      "URL": "http://www.serviceA.com"
-    },
-    "UAT": {
-      "URL": "http://www.serviceA_uat.com"
-    }
-  }
 
 ## Usage
 
@@ -64,7 +51,18 @@ dds.get('pricing-engine', 'serviceA').then(function(mongo) {
 The return value should be
 
 ```javascript
-
+{
+  ServiceName: 'serviceA',
+  Prod: {
+    endpoint: 'http://www.prodserviceA.com',
+    type: 'http'
+  },
+  UAT: {
+    endpoint: 'http://www.uatserviceA.com',
+    type: 'http'
+  },
+  AppName: 'pricing-engine'
+}
 ```
 
 ## License

@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/7.5.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@4.1.2
+3 info using node@v7.5.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/nedved/Desktop/GFG_ProjectCode/Github_Projects/gfg-nodejs-libary-service-discovery',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/nedved/.npm/gfg-nodejs-libary-service-discovery/0.1.6/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/nedved/.npm correctMkdir not in flight; initializing
+10 info lifecycle gfg-nodejs-libary-service-discovery@0.1.6~prepublish: gfg-nodejs-libary-service-discovery@0.1.6
+11 silly lifecycle gfg-nodejs-libary-service-discovery@0.1.6~prepublish: no script for prepublish, continuing
+12 info lifecycle gfg-nodejs-libary-service-discovery@0.1.6~prepare: gfg-nodejs-libary-service-discovery@0.1.6
+13 silly lifecycle gfg-nodejs-libary-service-discovery@0.1.6~prepare: no script for prepare, continuing
+14 verbose tar pack [ '/Users/nedved/.npm/gfg-nodejs-libary-service-discovery/0.1.6/package.tgz',
+14 verbose tar pack   '/Users/nedved/Desktop/GFG_ProjectCode/Github_Projects/gfg-nodejs-libary-service-discovery' ]
+15 verbose tarball /Users/nedved/.npm/gfg-nodejs-libary-service-discovery/0.1.6/package.tgz
+16 verbose folder /Users/nedved/Desktop/GFG_ProjectCode/Github_Projects/gfg-nodejs-libary-service-discovery
+17 verbose addLocalTarball adding from inside cache /Users/nedved/.npm/gfg-nodejs-libary-service-discovery/0.1.6/package.tgz
+18 verbose correctMkdir /Users/nedved/.npm correctMkdir not in flight; initializing
+19 silly cache afterAdd gfg-nodejs-libary-service-discovery@0.1.6
+20 verbose afterAdd /Users/nedved/.npm/gfg-nodejs-libary-service-discovery/0.1.6/package/package.json not in flight; writing
+21 verbose correctMkdir /Users/nedved/.npm correctMkdir not in flight; initializing
+22 verbose afterAdd /Users/nedved/.npm/gfg-nodejs-libary-service-discovery/0.1.6/package/package.json written
+23 silly publish { name: 'gfg-nodejs-libary-service-discovery',
+23 silly publish   version: '0.1.6',
+23 silly publish   description: 'Discovery service like etcd but implemented with DynamoDB',
+23 silly publish   main: 'index.js',
+23 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+23 silly publish   repository:
+23 silly publish    { type: 'git',
+23 silly publish      url: 'git+https://github.com/GFG/gfg-nodejs-libary-service-discovery.git' },
+23 silly publish   keywords: [ 'etcd', 'discovery' ],
+23 silly publish   author: { name: 'GFG', email: 'nedved.yang@global-fashion-group' },
+23 silly publish   license: 'MIT',
+23 silly publish   bugs: { url: 'https://github.com/GFG/gfg-nodejs-libary-service-discovery/issues' },
+23 silly publish   homepage: 'https://github.com/GFG/gfg-nodejs-libary-service-discovery',
+23 silly publish   dependencies: { 'aws-sdk': '^2.25.0', q: '^1.4.1' },
+23 silly publish   readme: '# Dynamo Discovery Service\n\n> Discovery service like etcd but implemented with DynamoDB\n\n## Installation (not yet available)\n\n```bash\n$ npm install --save gfg-nodejs-libary-service-discovery\n```\n\n## Introduction\n\n\nThe idea is to use `DynamoDB` to keep track of the services. The downside is the extra code you have to write for \neach service. This repo will try to tackle that.\n\nForked from: https://github.com/SamVerschueren/dynamo-discovery-service\n\nThe table hosted on Dynamo DB is: services\nPrimary key: AppName\nSort key: ServiceName\nValue: EndPoint\n\nEg.\npricing-engine\nserviceA\n{\n    "PROD": {\n      "URL": "http://www.serviceA.com"\n    },\n    "UAT": {\n      "URL": "http://www.serviceA_uat.com"\n    }\n  }\n\n## Usage\n\n### Connecting with DynamoDB\n\n```javascript\nvar servicediscovery = require(\'servicediscovery\');\n\n// Connect with DynamoDB via the access keys\nservicediscovery.connect({\n    accessKeyId: \'myAccessKey\',\n    secretAccessKey: \'mySecretAccessKey\',\n    region: \'ap-southeast-1\'\n});\n```\n\n### Retrieving a service\n\nBy only providing the name of the service, you will retrieve the end point for the service.\n\n```javascript\n// Retrieve the latest serviceA service for the app: pricing-engine\ndds.get(\'pricing-engine\', \'serviceA\').then(function(mongo) {\n    // Connect with the serviceA service\n}).catch(function(err) {\n    // Handle error\n});\n```\n\nThe return value should be\n\n```javascript\n\n```\n\n## License\n\nMIT © Sam Verschueren\n',
+23 silly publish   readmeFilename: 'README.md',
+23 silly publish   gitHead: 'd872968110612bf6383e07d2a6d4d7058f54a379',
+23 silly publish   _id: 'gfg-nodejs-libary-service-discovery@0.1.6',
+23 silly publish   _shasum: 'd91adf81f53be75f340a0c5c976d09e137c0d320',
+23 silly publish   _from: '.' }
+24 info lifecycle gfg-nodejs-libary-service-discovery@0.1.6~prepublishOnly: gfg-nodejs-libary-service-discovery@0.1.6
+25 silly lifecycle gfg-nodejs-libary-service-discovery@0.1.6~prepublishOnly: no script for prepublishOnly, continuing
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name gfg-nodejs-libary-service-discovery
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'gfg-nodejs-libary-service-discovery',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'gfg-nodejs-libary-service-discovery',
+30 silly mapToRegistry   name: 'gfg-nodejs-libary-service-discovery',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/gfg-nodejs-libary-service-discovery
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /Users/nedved/.npm/gfg-nodejs-libary-service-discovery/0.1.6/package.tgz
+34 verbose request uri https://registry.npmjs.org/gfg-nodejs-libary-service-discovery
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 3:05:41 PM
+37 verbose request using bearer token for auth
+38 verbose request id 0b9ad8793fb9d982
+39 http request PUT https://registry.npmjs.org/gfg-nodejs-libary-service-discovery
+40 http 403 https://registry.npmjs.org/gfg-nodejs-libary-service-discovery
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '95',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Thu, 09 Mar 2017 07:05:42 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-itm7426-ITM',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1489043142.190570,VS0,VE191',
+41 verbose headers   vary: 'Accept-Encoding' }
+42 verbose request invalidating /Users/nedved/.npm/registry.npmjs.org/gfg-nodejs-libary-service-discovery on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: "You cannot publish over the previously published version 0.1.6." : gfg-nodejs-libary-service-discovery
+44 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+44 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:212:14)
+44 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:186:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:192:7)
+44 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1081:10)
+44 verbose stack     at emitOne (events.js:96:13)
+44 verbose stack     at Request.emit (events.js:189:7)
+44 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1001:12)
+45 verbose statusCode 403
+46 verbose pkgid gfg-nodejs-libary-service-discovery
+47 verbose cwd /Users/nedved/Desktop/GFG_ProjectCode/Github_Projects/gfg-nodejs-libary-service-discovery
+48 error Darwin 16.4.0
+49 error argv "/usr/local/Cellar/node/7.5.0/bin/node" "/usr/local/bin/npm" "publish"
+50 error node v7.5.0
+51 error npm  v4.1.2
+52 error code E403
+53 error "You cannot publish over the previously published version 0.1.6." : gfg-nodejs-libary-service-discovery
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]
